@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* ===================== */
+/* JOB PAGE */
+/* ===================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  color: #3b82f6;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  color: gray;
+}
+
+.profile-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header {
+  max-width: 1100px;
+  margin: 40px auto 20px;
+  padding: 0 40px;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: gray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px 40px;
+}
+
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status {
+  background: #eaf2ff;
+  color: #3b82f6;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.category-inline {
+  color: #3b82f6;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.desc {
+  color: #555;
+  margin: 12px 0;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.meta p {
+  margin: 5px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.price {
+  color: #3b82f6;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* LOGIN / SIGNUP PAGE */
+/* ===================== */
+
+.auth-container {
+  display: flex;
+  height: calc(100vh - 65px);
+  overflow: hidden;
+}
+
+.auth-left {
+  width: 50%;
+  overflow: hidden;
+}
+
+.auth-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.auth-right {
+  width: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 32px 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.auth-subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.auth-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.auth-input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-input::placeholder {
+  color: #9ca3af;
+}
+
+.auth-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin: 6px 0 16px;
+  color: #374151;
+}
+
+.auth-check input {
+  width: 14px;
+  height: 14px;
+}
+
+.auth-btn {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.auth-bottom {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 13px;
+  color: #111827;
+}
+
+.auth-bottom span {
+  color: #4f46e5;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* HOME PAGE */
+/* ===================== */
+
+.home-page {
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+.home-outline-btn {
+  padding: 8px 16px;
+  border: 1px solid #3b82f6;
+  background: white;
+  color: #3b82f6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home-solid-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* HERO */
+.home-hero {
+  background: #dfe7f5;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home-title {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.home-title span {
+  color: #3b82f6;
+}
+
+.home-subtitle {
+  margin-top: 20px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.home-start-btn {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: 1px solid #3b82f6;
+  background: white;
+  color: #3b82f6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* STEPS */
+.home-steps {
+  background: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.home-steps h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.home-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.home-step-number {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.home-step-card h3 {
+  margin-top: 15px;
+}
+
+.home-step-card p {
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+/* FOOTER */
+.home-footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  background: #dfe7f5;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 900px) {
+  .auth-left {
+    display: none;
+  }
+
+  .auth-right {
+    width: 100%;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px 24px 32px;
+  }
+
+  .header {
+    padding: 0 24px;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .home-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
