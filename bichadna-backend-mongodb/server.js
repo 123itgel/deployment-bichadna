@@ -13,9 +13,7 @@ mongoose.connect("mongodb+srv://hiimfrosteinstein_db_user:JPQExvvUYH49jeDF@bicha
   .then(() => console.log("MongoDB connected!"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-// =====================
 // SCHEMAS
-// =====================
 
 const ProfileSchema = new mongoose.Schema({
   id: Number,
@@ -57,9 +55,7 @@ const Profile = mongoose.model("Profile", ProfileSchema);
 const Job = mongoose.model("Job", JobSchema);
 const Review = mongoose.model("Review", ReviewSchema);
 
-// =====================
 // SEED DATA
-// =====================
 
 async function seedData() {
   const profileCount = await Profile.countDocuments();
@@ -98,9 +94,7 @@ async function seedData() {
   }
 }
 
-// =====================
 // AUTH ROUTES
-// =====================
 
 // register
 app.post("/api/auth/register", async (req, res) => {
@@ -155,9 +149,7 @@ app.get("/api/profiles/:id", async (req, res) => {
   res.json(profile);
 });
 
-// =====================
 // JOB ROUTES
-// =====================
 
 app.get("/api/jobs", async (req, res) => {
   const { status, authorId, workerId } = req.query;
@@ -234,9 +226,7 @@ app.delete("/api/jobs/:id", async (req, res) => {
   res.json({ message: "Job deleted" });
 });
 
-// =====================
 // REVIEW ROUTES
-// =====================
 
 app.post("/api/reviews", async (req, res) => {
   const { jobId, reviewerId, workerId, stars, description } = req.body;
@@ -259,9 +249,7 @@ app.get("/api/reviews/my/:userId", async (req, res) => {
   res.json(reviews);
 });
 
-// =====================
 // START SERVER
-// =====================
 
 app.listen(PORT, async () => {
   await seedData();
