@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.set("json spaces", 2);
 
-mongoose.connect("mongodb+srv://hiimfrosteinstein_db_user:JPQExvvUYH49jeDF@bichadna.lnahfbq.mongodb.net/bichadna?appName=Bichadna")
+mongoose.connect("mongodb+srv://hiimfrosteinstein_db_user:JPQExvvUYH49jeDF@bichadna.1nahfbq.mongodb.net/bichadna?appName=Bichadna")
   .then(() => console.log("MongoDB connected!"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
